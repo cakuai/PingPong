@@ -33,6 +33,9 @@ function updatedScore(player, opponent){
     }   
 }
 
+// for in 是用來抓key
+// for of 是用來抓值
+
 function reset(){
     isGameOver= false;
     for (let i of [p1,p2]){
