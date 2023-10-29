@@ -29,6 +29,8 @@ function updatedScore(player, opponent){
             player.button.classList.add('has-text-success');
             opponent.button.classList.add('has-text-danger');
             isGameOver = true;
+            player.button.disabled= true;
+            opponent.button.disabled= true;
         }
     }   
 }
@@ -42,6 +44,7 @@ function reset(){
         i.score = 0;
         i.display.textContent = 0;
         i.button.classList.remove('has-text-success','has-text-danger');
+        i.button.disabled= false;
     }
 }
 

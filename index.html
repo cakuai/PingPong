@@ -13,15 +13,18 @@
   <body>
     <div class="container">
       <div class="columns">
-        <div class="column is-half">
+        <div class="column is-half is-offset-one-quarter">
           <div class="card">
+            <header class="card-header">
+              <p class="card-header-title">PING PONG GAME</p>
+            </header>
             <div class="card-content">
               <img
                 src="https://media.istockphoto.com/id/1360568955/photo/two-men-playing-ping-pong-top-view.jpg?s=1024x1024&w=is&k=20&c=pXqzaeEGpvu4A3NCAeLvulhiOV64vX4HNJGGihQy03I="
                 alt=""
               />
               <div class="content">
-                <h1 class="is-size-1">
+                <h1 class="title is-1">
                   <span id="p1display">0</span> TO <span id="p2display">0</span>
                 </h1>
 
@@ -34,9 +37,24 @@
               </div>
             </div>
             <footer class="card-footer">
-              <button class="card-footer-item" id="p1button">+1 for P1</button>
-              <button class="card-footer-item" id="p2button">+1 for P2</button>
-              <button class="card-footer-item" id="reset">RESET</button>
+              <button
+                class="button is-primary is-light card-footer-item"
+                id="p1button"
+              >
+                +1 for P1
+              </button>
+              <button
+                class="button is-link is-light card-footer-item"
+                id="p2button"
+              >
+                +1 for P2
+              </button>
+              <button
+                class="button is-danger is-light card-footer-item"
+                id="reset"
+              >
+                RESET
+              </button>
             </footer>
           </div>
         </div>
